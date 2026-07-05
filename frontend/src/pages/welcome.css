@@ -1,0 +1,100 @@
+.welcome-bg {
+  position: relative;
+  height: 100vh;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.welcome-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(ellipse at center, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.18) 55%, rgba(0,0,0,0.45) 100%),
+    linear-gradient(rgba(0,0,0,0.14), rgba(0,0,0,0.18)), url("../img/background_image.png");
+  background-size: cover, cover, cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(5px) saturate(0.9);
+  transform: scale(1.035);
+  z-index: 0;
+}
+
+.welcome-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  color: #f3f4f7;
+  font-size: 48px;
+  margin-bottom: 34px;
+  font-family: 'Merriweather', 'Times New Roman', serif;
+  letter-spacing: 1.6px;
+  text-shadow: 0 6px 18px rgba(3, 9, 23, 0.45);
+}
+
+.title span {
+  font-weight: 700;
+  color: #fff8ea;
+  text-shadow: 0 8px 22px rgba(9, 7, 6, 0.25);
+}
+
+.role-cards {
+  display: flex;
+  gap: 40px;
+}
+
+.role-card {
+  width: 260px;
+  height: 180px;
+  backdrop-filter: blur(10px) saturate(1.1);
+  background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  border-radius: 16px;
+  color: #f6f7fb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-style: solid;
+  cursor: pointer;
+  padding: 10px 14px;
+  box-shadow: 0 6px 18px rgba(6, 10, 25, 0.32);
+}
+
+.role-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 18px 42px rgba(12, 20, 45, 0.45), 0 0 18px rgba(217,182,97,0.07) inset;
+  border-color: rgba(217,182,97,0.18);
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.04);
+  border-radius: 12px;
+  transition: transform 200ms ease, background 220ms ease;
+  font-size: 36px;
+  line-height: 1;
+}
+
+.role-card:hover .icon {
+  transform: translateY(-4px) scale(1.03);
+}
+
+.role-card h3 {
+  margin: 0;
+  margin-top: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #f3f5f9;
+}

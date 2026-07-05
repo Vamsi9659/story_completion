@@ -1,0 +1,42 @@
+.student-bg {
+  height: 100vh;
+  background: linear-gradient(135deg, #3b82f6, #38bdf8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.student-bg h1 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.student-bg textarea {
+  width: 70%;
+  max-width: 800px;
+  height: 220px;
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  resize: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.student-bg button {
+  margin-top: 25px;
+  width: 220px;
+  padding: 14px;
+  font-size: 18px;
+  border-radius: 999px;
+  background: #2563eb;
+  color: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.student-bg button:hover {
+  background: #1d4ed8;
+}

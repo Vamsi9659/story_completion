@@ -1,0 +1,33 @@
+.teacher-page {
+  padding: 30px;
+  background: #f5f7fb;
+  min-height: 100vh;
+}
+
+.teacher-page h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.student-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.student-card {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.student-card h4 {
+  margin-bottom: 10px;
+}
+
+.avatar {
+  font-size: 36px;
+  margin-bottom: 10px;
+  text-align: center;
+}

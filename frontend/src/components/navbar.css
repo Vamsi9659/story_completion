@@ -1,0 +1,78 @@
+.navbar {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 34px;
+  background: linear-gradient(180deg, #06122b 0%, #0b2748 72%);
+  color: #f6f7fb;
+  box-shadow: 0 4px 18px rgba(2, 6, 20, 0.45);
+  position: relative;
+}
+
+.navbar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(255,215,130,0) 0%, rgba(255,215,130,0.95) 50%, rgba(255,215,130,0) 100%);
+  opacity: 0.95;
+}
+
+.logo {
+  cursor: pointer;
+  color: #d9b661;
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-size: 22px;
+  letter-spacing: 0.6px;
+  font-weight: 600;
+  transition: color 180ms ease;
+}
+
+.nav-links {
+  display: flex;
+  gap: 26px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e6e9ef;
+  font-weight: 500;
+  padding: 8px 10px;
+  border-radius: 6px;
+  transition: color 180ms ease, background 180ms ease, transform 180ms ease;
+}
+
+
+/* Remove focus outline for touch/click, keep visible focus for keyboard users */
+.nav-links a:focus {
+  outline: none;
+}
+
+
+
+
+
+.logo.active {
+  color: #d9b661;
+}
+
+/* Active link: only change text color to the gold */
+.nav-links a.active {
+  color: #d9b661;
+  background: transparent;
+  transform: none;
+}
+
+.nav-links button {
+  background: #d9b661;
+  border: none;
+  padding: 8px 12px;
+  color: #081028;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 600;
+}
